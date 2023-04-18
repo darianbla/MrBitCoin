@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MrBitCoin/static/css/main.bd13fa3a.css",
+    "main.js": "/MrBitCoin/static/js/main.733c4b71.js",
+    "static/js/787.0f83b512.chunk.js": "/MrBitCoin/static/js/787.0f83b512.chunk.js",
+    "static/media/mr_crypto.png": "/MrBitCoin/static/media/mr_crypto.a9aa9b0640a4e5347b69.png",
+    "index.html": "/MrBitCoin/index.html",
+    "main.bd13fa3a.css.map": "/MrBitCoin/static/css/main.bd13fa3a.css.map",
+    "main.733c4b71.js.map": "/MrBitCoin/static/js/main.733c4b71.js.map",
+    "787.0f83b512.chunk.js.map": "/MrBitCoin/static/js/787.0f83b512.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd13fa3a.css",
+    "static/js/main.733c4b71.js"
+  ]
+}
