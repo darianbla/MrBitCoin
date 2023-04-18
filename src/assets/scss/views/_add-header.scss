@@ -1,0 +1,47 @@
+/** @format */
+
+.app-header {
+  background-color: $clr3;
+  padding-block-end: 0.5rem;
+  a {
+    text-decoration: none;
+  }
+
+  .full-logo {
+    display: flex;
+    height: rem(38px);
+    width: rem(48px);
+    margin-block-end: 1rem;
+    color: $clr2;
+    margin: 0;
+    span {
+      line-height: 80%;
+      font-family: Impact, "Arial Narrow Bold", sans-serif;
+      padding-block-start: 0.4rem;
+    }
+    img {
+      text-decoration: none;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .routes {
+    display: flex;
+    gap: 20px;
+    // margin-block: 0.4em;
+    a {
+      margin-block: 0.6em 0.4em;
+      background-color: $clr2;
+      color: $clr6;
+      border: 0;
+      border-radius: 4px;
+      padding: 0.4em;
+      opacity: 1;
+      transition: 0.2s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

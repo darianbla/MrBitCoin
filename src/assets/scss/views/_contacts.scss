@@ -1,0 +1,85 @@
+/** @format */
+
+.contact-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .contact-list {
+        list-style: none;
+        display: grid;
+        max-width: 100%;
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: max-content;
+        grid-gap: rem(10px);
+
+        a {
+            text-decoration: none;
+        }
+
+        .contact-preview {
+            background-size: rem(50px);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            border-radius: 4px;
+            border: 2px solid $clr2;
+            opacity: 1;
+            transition: 0.2s;
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                background-color: $clr6;
+            }
+
+            .info {
+                padding: 0 0.5rem;
+                min-height: 132px;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: space-between;
+
+                .img-container {
+                    height: rem(68px);
+                    width: rem(68px);
+
+                    // overflow: hidden;
+                    img {
+                        height: rem(68px);
+                        width: rem(68px);
+                        object-fit: cover;
+                    }
+                }
+
+                h2 {
+                    text-decoration: none;
+                    text-align: center;
+                    color: $clr2;
+                    line-height: rem(15px);
+                    font-size: 1em;
+                }
+            }
+
+            .remove-btn {
+                position: absolute;
+                top: 100%;
+                transition: 0.4s;
+                border-radius: 4px;
+                border: 0;
+                color: $clr6;
+                background-color: $clr2;
+                cursor: pointer;
+                &-hovered {
+                    top: 88%;
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

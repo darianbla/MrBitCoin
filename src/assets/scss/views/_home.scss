@@ -1,0 +1,55 @@
+/** @format */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $clr6;
+  border: 2px solid $clr2;
+  color: $clr6;
+  max-width: rem(400px);
+  width: 100%;
+  min-height: rem(300px);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+
+  h2 {
+    background-color: $clr6;
+    padding: 0.5rem 1rem;
+    border: 2px solid $clr2;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 2em;
+    font-family: monospace, sans-serif;
+    color: $clr2;
+    margin: 0;
+    margin-block-start: 2rem;
+  }
+  .user-data {
+    margin-block-start: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-around;
+
+    .coins {
+      background-color: $clr2;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+
+      font-size: 1.5em;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      margin-top: 1rem;
+
+      .coins-icon {
+        // padding-block-start: 0.2rem;
+        padding-inline-end: 0.2rem;
+      }
+
+      &.bit-coin {
+        // margin-top: 0.5rem;
+        // padding-left: 0.31rem;
+      }
+    }
+  }
+}

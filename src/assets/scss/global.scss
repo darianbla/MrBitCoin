@@ -1,0 +1,50 @@
+/** @format */
+
+// Setup
+@import "setup/_variables";
+@import "setup/_functions";
+@import "setup/_mixins";
+@import "setup/_atomLoader.scss";
+
+// //VIEWS
+@import "views/_home";
+@import "views/_contacts.scss";
+@import "views/_add-header.scss";
+
+html {
+  background-color: white;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: $clr1;
+}
+.main-container {
+  padding-block-start: 1rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  // flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: white;
+
+  & > * {
+    grid-column: 2;
+  }
+
+  main {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  > footer {
+    background-color: #111;
+    color: white;
+  }
+}
